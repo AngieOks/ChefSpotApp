@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - javatest@localhost" uuid="480e5359-51c5-4fd2-b72d-9968aa158b61">
+      <secret-storage>master_key</secret-storage>
+      <user-name>tomcatUser</user-name>
+      <schema-pattern>javatest.*</schema-pattern>
+      <default-schemas>javatest.*</default-schemas>
+    </data-source>
+  </component>
+</project>

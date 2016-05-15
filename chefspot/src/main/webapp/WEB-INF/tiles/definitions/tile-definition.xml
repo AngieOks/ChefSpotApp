@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="baseLayout" template="/WEB-INF/tiles/template/baseLayout.jsp">
+        <put-attribute name="title" value="com.chefspot"/>
+        <put-attribute name="heading" value="" />
+        <put-attribute name="tagline" value="" />
+        <put-attribute name="navigation" value="/WEB-INF/tiles/template/navigation.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+    </definition>
+
+    <definition name="welcome" extends="baseLayout">
+        <put-attribute name="heading" value="Welcome"/>
+        <put-attribute name="tagline" value="LESS PROCESSING FOR HEALTHY LIVING!"/>
+        <put-attribute name="content" value="/WEB-INF/views/welcome.jsp"/>
+    </definition>
+
+    <definition name="recipes" extends="baseLayout">
+        <put-attribute name="title" value="" />
+        <put-attribute name="heading" value="Recipes" />
+        <put-attribute name="tagline" value="ALL OUR RECIPES" />
+        <put-attribute name="content" value="/WEB-INF/views/recipes.jsp" />
+    </definition>
+
+    <definition name="addRecipe" extends="baseLayout">
+        <put-attribute name="title" value="" />
+        <put-attribute name="heading" value="Recipes" />
+        <put-attribute name="tagline" value="ADD YOUR OWN RECIPES" />
+        <put-attribute name="content" value="/WEB-INF/views/addRecipe.jsp" />
+    </definition>
+
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="" />
+        <put-attribute name="heading" value="Log In" />
+        <put-attribute name="tagline" value="SIGN IN TO ADD YOUR OWN RECIPES" />
+        <put-attribute name="content" value="/WEB-INF/views/login.jsp" />
+    </definition>
+
+</tiles-definitions>
